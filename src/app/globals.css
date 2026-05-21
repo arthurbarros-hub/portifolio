@@ -1,0 +1,46 @@
+@import '../styles/tokens.css';
+@import '../styles/animations.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: rgb(var(--color-border) / 0.2);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: rgb(var(--color-bg));
+    color: rgb(var(--color-fg));
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background: rgb(var(--color-accent) / 0.35);
+    color: rgb(var(--color-fg));
+  }
+}
+
+@layer utilities {
+  .glow-soft {
+    box-shadow: var(--glow-soft);
+  }
+
+  .glow-strong {
+    box-shadow: var(--glow-strong);
+  }
+}
