@@ -9,6 +9,7 @@ import { AnimatedHeading } from '@/components/ui/AnimatedHeading';
 import { SectionContainer } from '@/components/ui/SectionContainer';
 import { GlassCard } from '@/components/ui/GlassCard';
 import { Button } from '@/components/ui/Button';
+import { buttonStyles } from '@/components/ui/Button';
 import { motion as motionTokens } from '@/styles/tokens';
 
 const revealVariants = {
@@ -18,6 +19,13 @@ const revealVariants = {
     y: 0,
     transition: { duration: 0.6, ease: motionTokens.ease.soft },
   },
+};
+
+const handleOpenProject = (liveUrl?: string, repoUrl?: string) => {
+  const url = liveUrl || repoUrl;
+  if (url) {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  }
 };
 
 const containerVariants = {
@@ -68,6 +76,7 @@ export const ProjectsSection = () => {
         src: '/images/projects/totem-ia/totem-working.webp',
         alt: 'Arthur Mansur ao lado do Totem IA em funcionamento',
       },
+      repoUrl: 'https://github.com/arthurbarros-hub/fablab-totem-ia',
     }),
     [],
   );
@@ -88,6 +97,11 @@ export const ProjectsSection = () => {
           stack: ['Next.js', 'TypeScript', 'React', 'Tailwind', 'Framer Motion'],
           aprendizados: ['Direção de arte digital', 'Componentização premium'],
         },
+        image: {
+          src: '/images/projects/747-garage/cover.webp',
+          alt: 'Interface premium do projeto 747 Garage',
+        },
+        repoUrl: 'https://github.com/arthurbarros-hub/747-garage',
       },
       {
         slug: 'line-rios-croche',
@@ -103,6 +117,11 @@ export const ProjectsSection = () => {
           stack: ['Next.js', 'TypeScript', 'Tailwind', 'WhatsApp API'],
           aprendizados: ['Fluxo de conversão', 'UX mobile-first'],
         },
+        image: {
+          src: '/images/projects/rios-croche/cover.webp',
+          alt: 'Interface do projeto Line Rios Crochê',
+        },
+        repoUrl: 'https://github.com/arthurbarros-hub/rios.croche',
       },
       {
         slug: 'dagym',
@@ -118,21 +137,53 @@ export const ProjectsSection = () => {
           stack: ['React', 'TypeScript', 'Java', 'UI Design'],
           aprendizados: ['Colaboração entre times', 'Integração front/back'],
         },
+        image: {
+          src: '/images/projects/dagym/cover.webp',
+          alt: 'Interface do projeto Dagym',
+        },
+        liveUrl: 'https://dagym.vercel.app/',
       },
       {
-        slug: 'java-projects',
-        title: 'Projetos Java',
+        slug: 'cadastro-usuarios-java',
+        title: 'Cadastro de Usuários em Java',
         category: 'Back-end • POO • Aplicações',
         impact: 'Base técnica',
         description:
-          'Conjunto de aplicações em Java voltadas à lógica, cadastro de usuários, telas interativas e evolução no ecossistema back-end.',
+          'Aplicação em Java voltada ao cadastro de usuários, com foco em lógica, organização de dados e evolução prática no back-end.',
         tech: ['Java', 'POO', 'Lógica', 'Android', 'Back-End'],
         details: {
-          problema: 'Evoluir domínio de back-end e POO em cenários práticos.',
-          solucao: 'Aplicações modulares com telas interativas e cadastros estruturados.',
+          problema: 'Evoluir domínio de back-end e POO em um cenário real de cadastro.',
+          solucao: 'Aplicação estruturada com cadastro de usuários e organização clara de dados.',
           stack: ['Java', 'POO', 'Android', 'Back-End'],
           aprendizados: ['Modelagem de dados', 'Boas práticas de código'],
         },
+        image: {
+          src: '/images/projects/java/cover.webp',
+          alt: 'Interface do projeto Cadastro de Usuários em Java',
+        },
+        repoUrl: 'https://github.com/arthurbarros-hub/CADASTROusuario',
+      },
+      {
+        slug: 'login-cadastro',
+        title: 'Sistema de Login e Cadastro',
+        category: 'Front-End • UI Design • Glassmorphism',
+        impact: 'Interface moderna',
+        description:
+          'Interface moderna de login e cadastro desenvolvida com HTML, CSS e JavaScript, explorando visual glassmorphism, responsividade e experiência de usuário.',
+        tech: ['HTML', 'CSS', 'JavaScript', 'UI Design', 'Glassmorphism', 'Responsivo'],
+        details: {
+          problema:
+            'Projeto focado em construção de interfaces modernas, organização visual, responsividade e microinterações em uma tela de autenticação com estética glassmorphism.',
+          solucao:
+            'Uso de HTML, CSS e JavaScript para criar um layout responsivo com visual glassmorphism, foco em usabilidade e refinamento visual.',
+          stack: ['HTML', 'CSS', 'JavaScript', 'UI Design', 'Glassmorphism', 'Responsivo'],
+          aprendizados: ['Interface moderna', 'Microinterações', 'Responsividade'],
+        },
+        image: {
+          src: '/images/projects/login-cadastro/cover.webp',
+          alt: 'Interface do Sistema de Login e Cadastro com glassmorphism',
+        },
+        repoUrl: 'https://github.com/arthurbarros-hub/Login-Cadastro',
       },
       {
         slug: 'jogo-da-velha',
@@ -153,6 +204,7 @@ export const ProjectsSection = () => {
           src: '/images/projects/jogo-da-velha/cover.webp',
           alt: 'Interface do jogo da velha com IA',
         },
+        liveUrl: 'https://jogo-da-velha-invencivel.vercel.app/',
       },
       {
         slug: 'gerador-musica',
@@ -173,6 +225,7 @@ export const ProjectsSection = () => {
           src: '/images/projects/gerador-musica/cover.webp',
           alt: 'Interface do gerador de letras com IA',
         },
+        liveUrl: 'https://gerador-de-letras-de-musica.vercel.app/',
       },
     ],
     [],
@@ -330,9 +383,16 @@ export const ProjectsSection = () => {
 
                     {/* Visual */}
                     <div className="order-1 lg:order-2">
-                      <div className="relative overflow-hidden rounded-2xl p-px">
+                      <button
+                        onClick={() => handleOpenProject(featuredProject.repoUrl)}
+                        onKeyDown={(e) => {
+                          if (e.key === 'Enter') handleOpenProject(featuredProject.repoUrl);
+                        }}
+                        aria-label="Abrir projeto Totem IA"
+                        className="relative w-full overflow-hidden rounded-2xl p-px hover:cursor-pointer focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-surface rounded-xl"
+                      >
                         <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-cyan-400/40 via-blue-500/30 to-transparent opacity-70" />
-                        <div className="relative h-72 sm:h-80 lg:h-full min-h-[20rem] rounded-[calc(1rem_-_1px)] overflow-hidden">
+                        <div className="relative h-72 sm:h-80 lg:h-full min-h-[20rem] rounded-[calc(1rem_-_1px)] overflow-hidden transition-all duration-500 group-hover:brightness-110">
                           <div className="pointer-events-none absolute inset-0 z-10 bg-[radial-gradient(circle_at_top,rgb(14_165_233/0.18),transparent_60%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                           <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                           <div className="pointer-events-none absolute inset-0 z-10 bg-white/5 backdrop-blur-[1px]" />
@@ -362,8 +422,15 @@ export const ProjectsSection = () => {
                               </div>
                             </div>
                           )}
+                          <div className="pointer-events-none absolute inset-0 z-30 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            <div className="text-center space-y-2">
+                              <p className="text-sm uppercase tracking-[0.3em] font-semibold text-white drop-shadow-lg">
+                                Abrir Projeto
+                              </p>
+                            </div>
+                          </div>
                         </div>
-                      </div>
+                      </button>
                     </div>
                   </div>
               </GlassCard>
@@ -388,23 +455,48 @@ export const ProjectsSection = () => {
                       <div className="absolute -inset-px rounded-2xl bg-gradient-to-br from-cyan-400/30 via-blue-500/20 to-transparent" />
                     </div>
                     <div className="relative z-10 h-40 overflow-hidden rounded-xl border border-white/10 bg-gradient-to-br from-surface/80 via-surface/40 to-transparent">
-                      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgb(99_102_241/0.18),transparent_65%)]" />
-                      <div className="absolute right-6 top-6 h-px w-20 bg-gradient-to-l from-cyan-400/70 to-transparent animate-pulse" />
-                      <div className="absolute left-6 bottom-6 h-px w-20 bg-gradient-to-r from-blue-400/70 to-transparent animate-pulse" />
-                      <div className="absolute left-4 top-4 h-3 w-3 border-l border-t border-white/40" />
-                      <div className="absolute right-4 bottom-4 h-3 w-3 border-r border-b border-white/40" />
-                      {project.image?.src && !secondaryImageErrors[project.slug] ? (
-                        <Image
-                          src={project.image.src}
-                          alt={project.image.alt}
-                          fill
-                          sizes="(min-width: 1024px) 28vw, 100vw"
-                          className="object-cover"
-                          onError={() =>
-                            setSecondaryImageErrors((prev) => ({ ...prev, [project.slug]: true }))
-                          }
-                        />
-                      ) : null}
+                      <button
+                        onClick={() => handleOpenProject(project.liveUrl, project.repoUrl)}
+                        onKeyDown={(e) => {
+                          if (e.key === 'Enter') handleOpenProject(project.liveUrl, project.repoUrl);
+                        }}
+                        aria-label={`Abrir projeto ${project.title}`}
+                        className="relative w-full h-full overflow-hidden rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1 focus:ring-offset-surface hover:cursor-pointer transition-all duration-300 group hover:brightness-110"
+                      >
+                        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgb(99_102_241/0.18),transparent_65%)]" />
+                        <div className="absolute right-6 top-6 h-px w-20 bg-gradient-to-l from-cyan-400/70 to-transparent animate-pulse" />
+                        <div className="absolute left-6 bottom-6 h-px w-20 bg-gradient-to-r from-blue-400/70 to-transparent animate-pulse" />
+                        <div className="absolute left-4 top-4 h-3 w-3 border-l border-t border-white/40" />
+                        <div className="absolute right-4 bottom-4 h-3 w-3 border-r border-b border-white/40" />
+                        {project.image?.src && !secondaryImageErrors[project.slug] ? (
+                          <Image
+                            src={project.image.src}
+                            alt={project.image.alt}
+                            fill
+                            sizes="(min-width: 1024px) 28vw, 100vw"
+                            className="object-cover transition-transform duration-500 group-hover:scale-110"
+                            onError={() =>
+                              setSecondaryImageErrors((prev) => ({ ...prev, [project.slug]: true }))
+                            }
+                          />
+                        ) : (
+                          <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-accent/15 via-surface/40 to-transparent">
+                            <div className="text-center space-y-2">
+                              <div className="text-4xl">◼</div>
+                              <p className="text-[0.65rem] uppercase tracking-[0.3em] text-muted">
+                                Preview indisponível
+                              </p>
+                            </div>
+                          </div>
+                        )}
+                        <div className="pointer-events-none absolute inset-0 z-20 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                          <div className="text-center space-y-1">
+                            <p className="text-xs uppercase tracking-[0.25em] font-semibold text-white drop-shadow-lg">
+                              Abrir Projeto
+                            </p>
+                          </div>
+                        </div>
+                      </button>
                     </div>
 
                     <div className="relative z-10 space-y-3">
@@ -445,6 +537,14 @@ export const ProjectsSection = () => {
                       >
                         Ver detalhes
                       </Button>
+                      {project.liveUrl || project.repoUrl ? (
+                        <button
+                          onClick={() => handleOpenProject(project.liveUrl, project.repoUrl)}
+                          className={buttonStyles({ variant: 'outline', size: 'sm' })}
+                        >
+                          {project.liveUrl ? 'Visitar Live' : 'Ver Código'}
+                        </button>
+                      ) : null}
                     </div>
 
                     {isExpanded ? (

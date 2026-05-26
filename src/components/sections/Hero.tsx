@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 
 import { usePrefersReducedMotion } from '@/hooks/use-prefers-reduced-motion';
 import { SectionContainer } from '@/components/ui/SectionContainer';
+import { TechLogoStrip } from '@/components/ui/TechLogoStrip';
 import { PremiumBadge } from '@/components/ui/PremiumBadge';
 import { MagneticButton } from '@/components/ui/MagneticButton';
 import { Button } from '@/components/ui/Button';
@@ -56,7 +57,7 @@ export const Hero = () => {
   return (
     <SectionContainer
       as="section"
-      className="relative min-h-[calc(100vh-80px)] overflow-hidden pt-20 pb-14 sm:pt-24 sm:pb-16 lg:pt-28"
+      className="relative min-h-screen overflow-hidden pt-32 sm:pt-40 lg:pt-48 pb-14 sm:pb-16 lg:pb-20"
     >
       <div
         aria-hidden="true"
@@ -95,6 +96,15 @@ export const Hero = () => {
               Entrar em contato
             </Button>
           </motion.div>
+
+          {/* Tech Logo Strip */}
+          <motion.div className="pt-8" variants={itemVariants}>
+            <p className="text-xs uppercase tracking-[0.3em] text-muted mb-4">
+              Ferramentas que utilizo
+            </p>
+            <TechLogoStrip />
+          </motion.div>
+
           <motion.div
             className="flex items-center gap-2 text-xs uppercase tracking-[0.28em] text-muted"
             variants={itemVariants}
