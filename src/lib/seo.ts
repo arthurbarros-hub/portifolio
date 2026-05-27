@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 
 export const siteMetadata = {
+<<<<<<< HEAD
   name: 'Arthur Mansur | Desenvolvedor Back-End',
   title: 'Arthur Mansur | Desenvolvedor Back-End Java & Desenvolvimento Web',
   description:
@@ -23,6 +24,14 @@ export const siteMetadata = {
     'Suporte Técnico',
     'São Paulo',
   ],
+=======
+  name: 'Premium Developer Portfolio',
+  title: 'Your Name',
+  description:
+    'Premium developer portfolio foundation focused on performance, motion, and clarity.',
+  url: 'https://example.com',
+  twitterHandle: '@yourhandle',
+>>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
 };
 
 export const baseMetadata: Metadata = {
@@ -32,6 +41,7 @@ export const baseMetadata: Metadata = {
     template: `%s · ${siteMetadata.name}`,
   },
   description: siteMetadata.description,
+<<<<<<< HEAD
   keywords: siteMetadata.keywords,
   authors: [{ name: siteMetadata.author }],
   creator: siteMetadata.author,
@@ -50,18 +60,32 @@ export const baseMetadata: Metadata = {
         alt: siteMetadata.title,
       },
     ],
+=======
+  openGraph: {
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+    url: siteMetadata.url,
+    siteName: siteMetadata.name,
+    type: 'website',
+>>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
   },
   twitter: {
     card: 'summary_large_image',
     title: siteMetadata.title,
     description: siteMetadata.description,
     creator: siteMetadata.twitterHandle,
+<<<<<<< HEAD
     images: [`${siteMetadata.url}/og-image.png`],
+=======
+>>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
   },
   robots: {
     index: true,
     follow: true,
+<<<<<<< HEAD
     nocache: true,
+=======
+>>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
     googleBot: {
       index: true,
       follow: true,
@@ -70,6 +94,7 @@ export const baseMetadata: Metadata = {
       'max-video-preview': -1,
     },
   },
+<<<<<<< HEAD
   alternates: {
     canonical: siteMetadata.url,
   },
@@ -78,4 +103,6 @@ export const baseMetadata: Metadata = {
     initialScale: 1,
     maximumScale: 5,
   },
+=======
+>>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
 };

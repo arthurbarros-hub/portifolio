@@ -22,12 +22,20 @@ const navLinks = [
 const socialLinks = [
   {
     label: 'GitHub',
+<<<<<<< HEAD
     href: 'https://github.com/arthurbarros-hub',
+=======
+    href: 'https://github.com',
+>>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
     icon: SiGithub,
   },
   {
     label: 'LinkedIn',
+<<<<<<< HEAD
     href: 'https://linkedin.com/in/arthur-mansur',
+=======
+    href: 'https://linkedin.com',
+>>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
     icon: FaLinkedin,
   },
 ];
@@ -100,7 +108,11 @@ export const Navbar = () => {
                   href={link.href}
                   onClick={(e) => smoothScroll(e, link.href)}
                   className="relative px-3 py-2 text-sm text-slate-300 hover:text-white transition-colors duration-200 group"
+<<<<<<< HEAD
                   aria-label={`Navegar para ${link.label}`}
+=======
+                  aria-label={`Navigate to ${link.label}`}
+>>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
                 >
                   {link.label}
                   <span

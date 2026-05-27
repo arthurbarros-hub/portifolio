@@ -41,6 +41,10 @@ const containerVariants = {
 
 export const ProjectsSection = () => {
   const prefersReducedMotion = usePrefersReducedMotion();
+<<<<<<< HEAD
+=======
+  const [featuredImageError, setFeaturedImageError] = useState(false);
+>>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
   const [featuredDetailsOpen, setFeaturedDetailsOpen] = useState(false);
   const [featuredTechOpen, setFeaturedTechOpen] = useState(false);
   const [expandedProject, setExpandedProject] = useState<string | null>(null);
@@ -260,12 +264,17 @@ export const ProjectsSection = () => {
           viewport={{ once: true, amount: 0.15 }}
           className="flex flex-col gap-8"
         >
+<<<<<<< HEAD
           {/* Featured Project - Totem IA */}
+=======
+          {/* Featured Project */}
+>>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
           <motion.div variants={revealVariants}>
             <div className="group relative">
               <div className="pointer-events-none absolute -inset-8 rounded-3xl bg-[radial-gradient(circle_at_top,rgb(14_165_233/0.45),transparent_70%)] opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-100" />
               <div className="pointer-events-none absolute -inset-px rounded-2xl bg-gradient-to-r from-cyan-400/40 via-blue-500/40 to-indigo-400/40 opacity-0 blur transition-opacity duration-500 group-hover:opacity-100" />
               <GlassCard className="relative overflow-hidden p-6 sm:p-8 lg:p-10">
+<<<<<<< HEAD
                 <div className="flex flex-col gap-8">
                   {/* Header Section */}
                   <motion.div
@@ -452,6 +461,174 @@ export const ProjectsSection = () => {
                     </motion.div>
                   ) : null}
                 </div>
+=======
+                  <div className="grid gap-8 lg:grid-cols-[0.45fr_0.55fr] lg:items-stretch">
+                    {/* Content */}
+                    <div className="order-2 flex flex-col gap-6 lg:order-1">
+                      <div className="space-y-4">
+                        <div className="flex items-center gap-3 flex-wrap">
+                          <span className="text-xs uppercase tracking-[0.35em] font-semibold text-accent">
+                            Destaque
+                          </span>
+                          <span className="text-xs uppercase tracking-[0.3em] text-muted">
+                            {featuredProject.category}
+                          </span>
+                        </div>
+                        <h3 className="text-3xl sm:text-4xl font-bold text-fg leading-tight">
+                          {featuredProject.title}
+                        </h3>
+                        <p className="text-sm sm:text-base text-muted leading-relaxed">
+                          {featuredProject.pitch}
+                        </p>
+                      </div>
+
+                      <div className="flex flex-wrap gap-2">
+                        {featuredProject.highlights.map((item) => (
+                          <span
+                            key={item}
+                            className="text-[0.65rem] uppercase tracking-[0.26em] text-muted px-3 py-1.5 rounded-full border border-white/10 bg-surface/60"
+                          >
+                            {item}
+                          </span>
+                        ))}
+                      </div>
+
+                      <div className="flex flex-wrap gap-2">
+                        {(featuredTechOpen
+                          ? featuredProject.tech
+                          : featuredProject.tech.slice(0, 4)
+                        ).map((tag) => (
+                          <span
+                            key={tag}
+                            className="text-[0.65rem] uppercase tracking-[0.24em] text-accent/80 px-3 py-1.5 rounded-full border border-accent/30 bg-accent/10"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                        {!featuredTechOpen && featuredProject.tech.length > 4 ? (
+                          <span className="text-[0.65rem] uppercase tracking-[0.24em] text-muted/70 px-2 py-1.5">
+                            +{featuredProject.tech.length - 4}
+                          </span>
+                        ) : null}
+                      </div>
+
+                      <div className="flex flex-wrap gap-3">
+                        <Button
+                          size="sm"
+                          variant="primary"
+                          onClick={() => setFeaturedDetailsOpen((prev) => !prev)}
+                        >
+                          Ver detalhes
+                        </Button>
+                        <Button
+                          size="sm"
+                          variant="outline"
+                          onClick={() => setFeaturedTechOpen((prev) => !prev)}
+                        >
+                          Tecnologias
+                        </Button>
+                      </div>
+
+                      {featuredDetailsOpen ? (
+                        <div className="space-y-4 rounded-2xl border border-white/10 bg-surface/60 p-4">
+                          <div className="space-y-2">
+                            <p className="text-xs uppercase tracking-[0.3em] text-accent/70">
+                              Problema
+                            </p>
+                            <p className="text-sm text-muted leading-relaxed">
+                              {featuredProject.details.problema}
+                            </p>
+                          </div>
+                          <div className="space-y-2">
+                            <p className="text-xs uppercase tracking-[0.3em] text-accent/70">
+                              Solução
+                            </p>
+                            <p className="text-sm text-muted leading-relaxed">
+                              {featuredProject.details.solucao}
+                            </p>
+                          </div>
+                          <div className="flex flex-wrap gap-2">
+                            {featuredProject.details.stack.map((tag) => (
+                              <span
+                                key={tag}
+                                className="text-[0.65rem] uppercase tracking-[0.24em] text-muted px-2 py-1.5 rounded-full border border-white/10 bg-surface/70"
+                              >
+                                {tag}
+                              </span>
+                            ))}
+                          </div>
+                          <div className="space-y-2">
+                            <p className="text-xs uppercase tracking-[0.3em] text-muted">
+                              Aprendizados
+                            </p>
+                            <div className="flex flex-wrap gap-2">
+                              {featuredProject.details.aprendizados.map((item) => (
+                                <span
+                                  key={item}
+                                  className="text-[0.65rem] uppercase tracking-[0.24em] text-muted/80 px-2 py-1.5 rounded-full border border-white/10"
+                                >
+                                  {item}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      ) : null}
+                    </div>
+
+                    {/* Visual */}
+                    <div className="order-1 lg:order-2">
+                      <button
+                        onClick={() => handleOpenProject(featuredProject.repoUrl)}
+                        onKeyDown={(e) => {
+                          if (e.key === 'Enter') handleOpenProject(featuredProject.repoUrl);
+                        }}
+                        aria-label="Abrir projeto Totem IA"
+                        className="relative w-full overflow-hidden rounded-2xl p-px hover:cursor-pointer focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-surface rounded-xl"
+                      >
+                        <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-cyan-400/40 via-blue-500/30 to-transparent opacity-70" />
+                        <div className="relative h-72 sm:h-80 lg:h-full min-h-[20rem] rounded-[calc(1rem_-_1px)] overflow-hidden transition-all duration-500 group-hover:brightness-110">
+                          <div className="pointer-events-none absolute inset-0 z-10 bg-[radial-gradient(circle_at_top,rgb(14_165_233/0.18),transparent_60%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                          <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+                          <div className="pointer-events-none absolute inset-0 z-10 bg-white/5 backdrop-blur-[1px]" />
+                          <div className="pointer-events-none absolute left-6 top-6 z-20 h-px w-24 bg-gradient-to-r from-cyan-400/70 to-transparent animate-pulse" />
+                          <div className="pointer-events-none absolute right-6 bottom-8 z-20 h-px w-28 bg-gradient-to-l from-blue-400/70 to-transparent animate-pulse" />
+                          <div className="pointer-events-none absolute left-5 top-5 z-20 h-4 w-4 border-l border-t border-cyan-300/70" />
+                          <div className="pointer-events-none absolute right-5 top-5 z-20 h-4 w-4 border-r border-t border-cyan-300/70" />
+                          <div className="pointer-events-none absolute left-5 bottom-5 z-20 h-4 w-4 border-l border-b border-cyan-300/70" />
+                          <div className="pointer-events-none absolute right-5 bottom-5 z-20 h-4 w-4 border-r border-b border-cyan-300/70" />
+                          {!featuredImageError ? (
+                            <Image
+                              src={featuredProject.image.src}
+                              alt={featuredProject.image.alt}
+                              fill
+                              sizes="(min-width: 1024px) 55vw, 100vw"
+                              className="object-cover transition-transform duration-700 ease-soft group-hover:scale-105"
+                              onError={() => setFeaturedImageError(true)}
+                              priority
+                            />
+                          ) : (
+                            <div className="relative z-20 flex h-full items-center justify-center bg-gradient-to-br from-accent/20 to-transparent">
+                              <div className="text-center space-y-2">
+                                <div className="text-5xl">🤖</div>
+                                <p className="text-xs uppercase tracking-[0.3em] text-muted">
+                                  Projeto Interativo
+                                </p>
+                              </div>
+                            </div>
+                          )}
+                          <div className="pointer-events-none absolute inset-0 z-30 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            <div className="text-center space-y-2">
+                              <p className="text-sm uppercase tracking-[0.3em] font-semibold text-white drop-shadow-lg">
+                                Abrir Projeto
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+>>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
               </GlassCard>
             </div>
           </motion.div>
@@ -561,7 +738,11 @@ export const ProjectsSection = () => {
                           onClick={() => handleOpenProject(project.liveUrl, project.repoUrl)}
                           className={buttonStyles({ variant: 'outline', size: 'sm' })}
                         >
+<<<<<<< HEAD
                           {project.liveUrl ? 'Visitar Site' : 'Ver Código'}
+=======
+                          {project.liveUrl ? 'Visitar Live' : 'Ver Código'}
+>>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
                         </button>
                       ) : null}
                     </div>

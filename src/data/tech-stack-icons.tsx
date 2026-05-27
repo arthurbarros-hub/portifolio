@@ -4,7 +4,14 @@ import {
   SiTypescript,
   SiJavascript,
   SiTailwindcss,
+<<<<<<< HEAD
   SiMysql,
+=======
+  SiFramer,
+  SiMysql,
+  SiPostgresql,
+  SiFirebase,
+>>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
   SiGit,
   SiGithub,
   SiVercel,
@@ -12,6 +19,10 @@ import {
   SiFigma,
   SiOpenai,
   SiNodedotjs,
+<<<<<<< HEAD
+=======
+  SiExpress,
+>>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
   SiPython,
 } from 'react-icons/si';
 import { FaJava, FaHtml5, FaCss3 } from 'react-icons/fa';
@@ -56,6 +67,41 @@ export interface Technology {
 
 // Custom Icons for tools without react-icons equivalents
 
+<<<<<<< HEAD
+=======
+// Gemini - Google Gemini logo style
+const GeminiIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6">
+    <defs>
+      <linearGradient id="gemini-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stopColor="currentColor" />
+      </linearGradient>
+    </defs>
+    {/* G geometric shape */}
+    <path
+      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3-8c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3z"
+      fill="currentColor"
+    />
+  </svg>
+);
+
+// Claude - Anthropic's elegant style
+const ClaudeIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6">
+    {/* Elegant curved C shape */}
+    <path
+      d="M7 5C5.9 5 5 5.9 5 7V17C5 18.1 5.9 19 7 19C8.1 19 9 18.1 9 17M15 5C16.1 5 17 5.9 17 7V17C17 18.1 16.1 19 15 19C13.9 19 13 18.1 13 17"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    {/* Center accent */}
+    <circle cx="12" cy="12" r="1.5" fill="currentColor" opacity="0.6" />
+  </svg>
+);
+
+>>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
 // GitHub Copilot - Code brackets style
 const GitHubCopilotIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6">
@@ -70,7 +116,37 @@ const GitHubCopilotIcon = () => (
   </svg>
 );
 
+<<<<<<< HEAD
 
+=======
+// Midjourney - Professional "MJ" wordmark
+const MidjourneyIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6">
+    <text
+      x="12"
+      y="15"
+      fontSize="11"
+      fontWeight="700"
+      fontFamily="system-ui, -apple-system, 'Segoe UI', sans-serif"
+      textAnchor="middle"
+      fill="currentColor"
+      letterSpacing="-0.3"
+    >
+      MJ
+    </text>
+  </svg>
+);
+
+// v0 - Vercel's v0 style
+const V0Icon = () => (
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6">
+    {/* V shape with geometric style */}
+    <path d="M6 6L11 15L10.5 18" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
+    {/* 0 shape */}
+    <ellipse cx="16" cy="12" rx="2.5" ry="4" stroke="currentColor" strokeWidth="1.3" />
+  </svg>
+);
+>>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
 
 export const technologies: Technology[] = [
   // Frontend
@@ -110,6 +186,16 @@ export const technologies: Technology[] = [
     animationType: 'wave-flow',
   },
   {
+<<<<<<< HEAD
+=======
+    name: 'Framer Motion',
+    category: 'frontend',
+    icon: SiFramer,
+    brandColor: '#0055FF',
+    animationType: 'morphing',
+  },
+  {
+>>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
     name: 'HTML5',
     category: 'frontend',
     icon: FaHtml5,
@@ -139,7 +225,17 @@ export const technologies: Technology[] = [
     brandColor: '#68A063',
     animationType: 'network-dots',
   },
+<<<<<<< HEAD
 
+=======
+  {
+    name: 'Express',
+    category: 'backend',
+    icon: SiExpress,
+    brandColor: '#90C53F',
+    animationType: 'speed-line',
+  },
+>>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
   {
     name: 'Python',
     category: 'backend',
@@ -156,6 +252,23 @@ export const technologies: Technology[] = [
     brandColor: '#00758F',
     animationType: 'dolphin-wave',
   },
+<<<<<<< HEAD
+=======
+  {
+    name: 'PostgreSQL',
+    category: 'database',
+    icon: SiPostgresql,
+    brandColor: '#336791',
+    animationType: 'wave-heavy',
+  },
+  {
+    name: 'Firebase',
+    category: 'database',
+    icon: SiFirebase,
+    brandColor: '#FFCA28',
+    animationType: 'flame-flicker',
+  },
+>>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
 
   // Tools
   {
@@ -180,6 +293,16 @@ export const technologies: Technology[] = [
     animationType: 'shimmer-triangle',
   },
   {
+<<<<<<< HEAD
+=======
+    name: 'VS Code',
+    category: 'tools',
+    icon: SiVscodium,
+    brandColor: '#007ACC',
+    animationType: 'pulse-glow',
+  },
+  {
+>>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
     name: 'Postman',
     category: 'tools',
     icon: SiPostman,
@@ -202,4 +325,42 @@ export const technologies: Technology[] = [
     brandColor: '#10A37F',
     animationType: 'orbital-data',
   },
+<<<<<<< HEAD
+=======
+  {
+    name: 'Gemini',
+    category: 'ai',
+    icon: GeminiIcon,
+    brandColor: '#4285F4',
+    animationType: 'dual-glow',
+  },
+  {
+    name: 'Claude',
+    category: 'ai',
+    icon: ClaudeIcon,
+    brandColor: '#D4A574',
+    animationType: 'warm-gradient',
+  },
+  {
+    name: 'GitHub Copilot',
+    category: 'ai',
+    icon: GitHubCopilotIcon,
+    brandColor: '#181717',
+    animationType: 'code-typing',
+  },
+  {
+    name: 'Midjourney',
+    category: 'ai',
+    icon: MidjourneyIcon,
+    brandColor: '#A78BFA',
+    animationType: 'gradient-flow',
+  },
+  {
+    name: 'v0',
+    category: 'ai',
+    icon: V0Icon,
+    brandColor: '#000000',
+    animationType: 'grid-building',
+  },
+>>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
 ];

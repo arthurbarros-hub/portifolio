@@ -57,7 +57,11 @@ export const Hero = () => {
   return (
     <SectionContainer
       as="section"
+<<<<<<< HEAD
       className="relative min-h-screen overflow-visible pt-32 sm:pt-40 lg:pt-48 pb-14 sm:pb-16 lg:pb-20"
+=======
+      className="relative min-h-screen overflow-hidden pt-32 sm:pt-40 lg:pt-48 pb-14 sm:pb-16 lg:pb-20"
+>>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
     >
       <div
         aria-hidden="true"
@@ -97,6 +101,7 @@ export const Hero = () => {
             </Button>
           </motion.div>
 
+<<<<<<< HEAD
           {/* Curriculum Buttons */}
           <motion.div className="flex flex-wrap gap-3" variants={itemVariants}>
             <a
@@ -118,6 +123,8 @@ export const Hero = () => {
             </a>
           </motion.div>
 
+=======
+>>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
           {/* Tech Logo Strip */}
           <motion.div className="pt-8" variants={itemVariants}>
             <p className="text-xs uppercase tracking-[0.3em] text-muted mb-4">

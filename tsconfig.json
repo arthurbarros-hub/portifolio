@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
     "ignoreDeprecations": "6.0",
+=======
+>>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
     "target": "ES2022",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
