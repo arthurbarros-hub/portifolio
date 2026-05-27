@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
@@ -52,7 +52,7 @@ export default function NotFound() {
             404
           </h1>
           <p className="text-2xl sm:text-3xl font-bold text-white">
-            Página não encontrada
+            PÃ¡gina nÃ£o encontrada
           </p>
         </motion.div>
 
@@ -61,7 +61,7 @@ export default function NotFound() {
           variants={itemVariants}
           className="text-base sm:text-lg text-muted leading-relaxed max-w-lg"
         >
-          O recurso que você procura não existe ou foi movido. Mas não se preocupe, você pode voltar ao portfólio e continuar explorando.
+          O recurso que vocÃª procura nÃ£o existe ou foi movido. Mas nÃ£o se preocupe, vocÃª pode voltar ao portfÃ³lio e continuar explorando.
         </motion.p>
 
         {/* CTA */}
@@ -71,7 +71,7 @@ export default function NotFound() {
               size="md"
               className="bg-accent/10 hover:bg-accent/20 border border-accent/30 hover:border-accent/50 text-accent"
             >
-              Voltar ao Início
+              Voltar ao InÃ­cio
             </Button>
           </Link>
           <Link href="/#contact">
@@ -95,10 +95,11 @@ export default function NotFound() {
             transition={{ duration: 3, repeat: Infinity }}
           >
             <span className="inline-flex h-2 w-2 rounded-full bg-accent/50" />
-            Arthur Mansur Portfólio
+            Arthur Mansur PortfÃ³lio
           </motion.div>
         </motion.div>
       </motion.div>
     </SectionContainer>
   );
 }
+

@@ -1,4 +1,4 @@
-import type { Transition, Variants } from 'framer-motion';
+﻿import type { Transition, Variants } from 'framer-motion';
 
 import { motion as motionTokens } from '@/styles/tokens';
 
@@ -27,3 +27,4 @@ export const fadeIn: Variants = {
 
 export const withReducedMotion = (reduced: boolean, transition: Transition): Transition =>
   reduced ? { duration: 0 } : transition;
+

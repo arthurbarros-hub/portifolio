@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useMemo } from 'react';
 import { motion } from 'framer-motion';
@@ -43,7 +43,7 @@ export const AchievementsSection = () => {
         value: '10+',
       },
       {
-        label: 'Experiência Prática',
+        label: 'ExperiÃªncia PrÃ¡tica',
         value: 'Projetos reais',
       },
       {
@@ -73,7 +73,7 @@ export const AchievementsSection = () => {
         <AnimatedHeading
           eyebrow="RECONHECIMENTO"
           title="Reconhecimento & Conquistas"
-          subtitle="Projetos que ultrapassaram o código e geraram impacto real em ambientes acadêmicos e tecnológicos."
+          subtitle="Projetos que ultrapassaram o cÃ³digo e geraram impacto real em ambientes acadÃªmicos e tecnolÃ³gicos."
           size="lg"
           accent
         />
@@ -93,14 +93,14 @@ export const AchievementsSection = () => {
                 <div className="space-y-4">
                   <div className="flex items-center gap-3 flex-wrap">
                     <span className="text-xs uppercase tracking-[0.35em] font-semibold text-accent/80 px-3 py-1.5 rounded-full border border-accent/30 bg-accent/10">
-                      VALIDAÇÃO REAL
+                      VALIDAÃ‡ÃƒO REAL
                     </span>
                   </div>
                   <h4 className="text-2xl font-bold text-fg leading-tight">
                     Reconhecimento Institucional
                   </h4>
                   <p className="text-sm text-muted leading-relaxed">
-                    Participação ativa em iniciativas práticas de tecnologia aplicada, com projetos apresentados e validados em ambiente educacional e experimental.
+                    ParticipaÃ§Ã£o ativa em iniciativas prÃ¡ticas de tecnologia aplicada, com projetos apresentados e validados em ambiente educacional e experimental.
                   </p>
                   <div className="flex flex-wrap gap-2 pt-2">
                     <span className="text-[0.65rem] uppercase tracking-[0.24em] text-muted px-3 py-1.5 rounded-full border border-white/10 bg-surface/60">
@@ -110,7 +110,7 @@ export const AchievementsSection = () => {
                       Ambiente Educacional
                     </span>
                     <span className="text-[0.65rem] uppercase tracking-[0.24em] text-muted px-3 py-1.5 rounded-full border border-white/10 bg-surface/60">
-                      Inovação
+                      InovaÃ§Ã£o
                     </span>
                   </div>
                 </div>
@@ -143,3 +143,4 @@ export const AchievementsSection = () => {
     </SectionContainer>
   );
 };
+

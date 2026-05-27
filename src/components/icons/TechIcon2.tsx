@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { motion } from 'framer-motion';
 import { IconType } from 'react-icons';
@@ -282,3 +282,4 @@ export const TechIcon = ({
     </motion.div>
   );
 };
+

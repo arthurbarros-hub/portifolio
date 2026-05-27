@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useMemo } from 'react';
 import Link from 'next/link';
@@ -46,7 +46,7 @@ export const Footer = () => {
 
   const quickLinks = useMemo<FooterLink[]>(
     () => [
-      { label: 'Início', href: '#home' },
+      { label: 'InÃ­cio', href: '#home' },
       { label: 'Sobre', href: '#about' },
       { label: 'Projetos', href: '#projects' },
       { label: 'Tecnologias', href: '#tech' },
@@ -119,10 +119,10 @@ export const Footer = () => {
               <div className="flex flex-col gap-4">
                 <h3 className="text-xl font-bold text-white">Arthur Mansur</h3>
                 <p className="text-sm text-muted leading-relaxed">
-                  Desenvolvedor Back-End em evolução no ecossistema Java.
+                  Desenvolvedor Back-End em evoluÃ§Ã£o no ecossistema Java.
                 </p>
                 <p className="text-xs text-muted/60">
-                  Construído com foco em performance, acessibilidade e experiência premium.
+                  ConstruÃ­do com foco em performance, acessibilidade e experiÃªncia premium.
                 </p>
               </div>
             </motion.div>
@@ -131,7 +131,7 @@ export const Footer = () => {
             <motion.div variants={revealVariants} className="lg:col-span-1">
               <div className="flex flex-col gap-4">
                 <h4 className="text-sm font-semibold uppercase tracking-wider text-accent">
-                  Links Rápidos
+                  Links RÃ¡pidos
                 </h4>
                 <nav className="flex flex-col gap-2">
                   {quickLinks.map((link) => (
@@ -183,7 +183,7 @@ export const Footer = () => {
                   Next.js, TypeScript e Tailwind CSS.
                 </p>
                 <p className="text-xs text-muted/60">
-                  Código aberto e otimizado para web moderno.
+                  CÃ³digo aberto e otimizado para web moderno.
                 </p>
               </div>
             </motion.div>
@@ -201,10 +201,10 @@ export const Footer = () => {
             className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center justify-between"
           >
             <p className="text-xs sm:text-sm text-muted/70 text-center sm:text-left">
-              © 2026 Arthur Mansur. Desenvolvido com Next.js, TypeScript e Tailwind CSS.
+              Â© 2026 Arthur Mansur. Desenvolvido com Next.js, TypeScript e Tailwind CSS.
             </p>
             <p className="text-xs text-muted/60 text-center">
-              Foco em performance, acessibilidade e código premium.
+              Foco em performance, acessibilidade e cÃ³digo premium.
             </p>
           </motion.div>
         </div>
@@ -212,3 +212,4 @@ export const Footer = () => {
     </footer>
   );
 };
+

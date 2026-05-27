@@ -1,4 +1,4 @@
-import type { HTMLAttributes, ReactNode } from 'react';
+﻿import type { HTMLAttributes, ReactNode } from 'react';
 
 import type { Project } from '@/types';
 import { cn } from '@/utils/cn';
@@ -32,3 +32,4 @@ export const ProjectCard = ({ project, actionSlot, className, ...props }: Projec
     </div>
   </GlassCard>
 );
+

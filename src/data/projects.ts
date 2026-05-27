@@ -1,24 +1,24 @@
-import type { Project } from '@/types';
+﻿import type { Project } from '@/types';
 
 export const projects: Project[] = [
   {
     slug: 'assistente-ia-fablab',
     title: 'Assistente Interativo com IA',
-    category: 'Projeto de automação + inteligência artificial',
+    category: 'Projeto de automaÃ§Ã£o + inteligÃªncia artificial',
     summary:
-      'Desenvolvimento de solução experimental integrando sensores físicos com inteligência artificial em tempo real, criando uma experiência interativa única.',
+      'Desenvolvimento de soluÃ§Ã£o experimental integrando sensores fÃ­sicos com inteligÃªncia artificial em tempo real, criando uma experiÃªncia interativa Ãºnica.',
     problem:
-      'Como criar uma experiência interativa capaz de integrar sensores físicos com inteligência artificial em tempo real?',
+      'Como criar uma experiÃªncia interativa capaz de integrar sensores fÃ­sicos com inteligÃªncia artificial em tempo real?',
     solution:
-      'Desenvolvimento de solução experimental com Python, OpenAI API e integração entre sensores físicos e interface digital.',
+      'Desenvolvimento de soluÃ§Ã£o experimental com Python, OpenAI API e integraÃ§Ã£o entre sensores fÃ­sicos e interface digital.',
     tags: ['Python', 'OpenAI API', 'Arduino', 'Raspberry Pi', 'Sensores', 'Git'],
     challenges: [
-      'Integração hardware/software',
-      'Comunicação entre dispositivos',
+      'IntegraÃ§Ã£o hardware/software',
+      'ComunicaÃ§Ã£o entre dispositivos',
       'Fluxo de eventos',
       'Respostas da IA',
     ],
-    learnings: ['Automação', 'Arquitetura experimental', 'Integração de APIs', 'Sistemas interativos'],
+    learnings: ['AutomaÃ§Ã£o', 'Arquitetura experimental', 'IntegraÃ§Ã£o de APIs', 'Sistemas interativos'],
     featured: true,
     year: 2025,
   },
@@ -27,11 +27,11 @@ export const projects: Project[] = [
     title: '747 Garage',
     category: 'Web premium experience',
     summary:
-      'Presença digital premium para oficina automotiva com landing page moderna, motion design e identidade visual forte.',
+      'PresenÃ§a digital premium para oficina automotiva com landing page moderna, motion design e identidade visual forte.',
     problem:
-      'Criar uma presença digital premium para oficina automotiva com forte identidade visual.',
+      'Criar uma presenÃ§a digital premium para oficina automotiva com forte identidade visual.',
     solution:
-      'Landing page premium com Next.js, motion design, componentização e foco em experiência visual.',
+      'Landing page premium com Next.js, motion design, componentizaÃ§Ã£o e foco em experiÃªncia visual.',
     tags: ['Next.js', 'TypeScript', 'React', 'Tailwind', 'Framer Motion'],
     challenges: [],
     learnings: [],
@@ -39,14 +39,14 @@ export const projects: Project[] = [
   },
   {
     slug: 'line-rios-croche',
-    title: 'Line Rios Crochê',
-    category: 'E-commerce / Conversão',
+    title: 'Line Rios CrochÃª',
+    category: 'E-commerce / ConversÃ£o',
     summary:
-      'Plataforma de e-commerce mobile-first otimizada para conversão via WhatsApp com catálogo dinâmico.',
+      'Plataforma de e-commerce mobile-first otimizada para conversÃ£o via WhatsApp com catÃ¡logo dinÃ¢mico.',
     problem:
-      'Criar fluxo comercial otimizado para conversão via WhatsApp.',
+      'Criar fluxo comercial otimizado para conversÃ£o via WhatsApp.',
     solution:
-      'E-commerce mobile-first com catálogo dinâmico e geração automatizada de mensagens.',
+      'E-commerce mobile-first com catÃ¡logo dinÃ¢mico e geraÃ§Ã£o automatizada de mensagens.',
     tags: ['Next.js', 'TypeScript', 'React', 'Tailwind', 'WhatsApp Integration'],
     challenges: [],
     learnings: [],
@@ -57,14 +57,15 @@ export const projects: Project[] = [
     title: 'Cloud Gaming Research',
     category: 'Pesquisa aplicada',
     summary:
-      'Análise quantitativa de cloud gaming como solução de acessibilidade e seu impacto na indústria.',
+      'AnÃ¡lise quantitativa de cloud gaming como soluÃ§Ã£o de acessibilidade e seu impacto na indÃºstria.',
     problem:
-      'Analisar cloud gaming como solução de acessibilidade e impacto na pirataria.',
+      'Analisar cloud gaming como soluÃ§Ã£o de acessibilidade e impacto na pirataria.',
     solution:
-      'Pesquisa quantitativa + análise de mercado + estudo acadêmico.',
-    tags: ['Pesquisa', 'Análise de Mercado', 'Cloud Gaming'],
+      'Pesquisa quantitativa + anÃ¡lise de mercado + estudo acadÃªmico.',
+    tags: ['Pesquisa', 'AnÃ¡lise de Mercado', 'Cloud Gaming'],
     challenges: [],
     learnings: [],
     year: 2023,
   },
 ];
+

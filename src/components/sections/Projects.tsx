@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
@@ -41,10 +41,7 @@ const containerVariants = {
 
 export const ProjectsSection = () => {
   const prefersReducedMotion = usePrefersReducedMotion();
-<<<<<<< HEAD
-=======
-  const [featuredImageError, setFeaturedImageError] = useState(false);
->>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
+
   const [featuredDetailsOpen, setFeaturedDetailsOpen] = useState(false);
   const [featuredTechOpen, setFeaturedTechOpen] = useState(false);
   const [expandedProject, setExpandedProject] = useState<string | null>(null);
@@ -52,12 +49,12 @@ export const ProjectsSection = () => {
 
   const featuredProject = useMemo(
     () => ({
-      title: 'Totem IA — Assistente Interativo',
-      category: 'IA aplicada • Hardware • Automação',
+      title: 'Totem IA â€” Assistente Interativo',
+      category: 'IA aplicada â€¢ Hardware â€¢ AutomaÃ§Ã£o',
       pitch:
-        'Protótipo físico inteligente que conecta sensores, interface digital e inteligência artificial para criar uma experiência interativa em tempo real.',
+        'ProtÃ³tipo fÃ­sico inteligente que conecta sensores, interface digital e inteligÃªncia artificial para criar uma experiÃªncia interativa em tempo real.',
       highlights: [
-        'Integração hardware/software',
+        'IntegraÃ§Ã£o hardware/software',
         'Python + OpenAI API',
         'Arduino e Raspberry Pi',
         'Projeto apresentado em ambiente real',
@@ -65,14 +62,14 @@ export const ProjectsSection = () => {
       tech: ['Python', 'OpenAI API', 'Arduino', 'Raspberry Pi', 'Sensores', 'Git'],
       details: {
         problema:
-          'Como integrar sensores físicos com IA em tempo real mantendo estabilidade e resposta imediata.',
+          'Como integrar sensores fÃ­sicos com IA em tempo real mantendo estabilidade e resposta imediata.',
         solucao:
-          'Arquitetura híbrida com Python, orquestração de eventos e interface digital conectada ao hardware.',
+          'Arquitetura hÃ­brida com Python, orquestraÃ§Ã£o de eventos e interface digital conectada ao hardware.',
         stack: ['Python', 'OpenAI API', 'Arduino', 'Raspberry Pi', 'Sensores', 'Git'],
         aprendizados: [
-          'Automação física aplicada',
-          'Integração de APIs em tempo real',
-          'Design de experiências interativas',
+          'AutomaÃ§Ã£o fÃ­sica aplicada',
+          'IntegraÃ§Ã£o de APIs em tempo real',
+          'Design de experiÃªncias interativas',
         ],
       },
       image: {
@@ -89,16 +86,16 @@ export const ProjectsSection = () => {
       {
         slug: '747-garage',
         title: '747 Garage',
-        category: 'Web premium • Identidade • Motion',
-        impact: 'Experiência premium',
+        category: 'Web premium â€¢ Identidade â€¢ Motion',
+        impact: 'ExperiÃªncia premium',
         description:
-          'Experiência web premium para uma plataforma automotiva, com foco em identidade visual, performance e interface moderna.',
+          'ExperiÃªncia web premium para uma plataforma automotiva, com foco em identidade visual, performance e interface moderna.',
         tech: ['Next.js', 'TypeScript', 'Tailwind', 'React', 'Motion'],
         details: {
-          problema: 'Criar presença digital de alto impacto para um negócio automotivo com identidade forte.',
+          problema: 'Criar presenÃ§a digital de alto impacto para um negÃ³cio automotivo com identidade forte.',
           solucao: 'Landing page com motion design, narrativa visual e foco em performance.',
           stack: ['Next.js', 'TypeScript', 'React', 'Tailwind', 'Framer Motion'],
-          aprendizados: ['Direção de arte digital', 'Componentização premium'],
+          aprendizados: ['DireÃ§Ã£o de arte digital', 'ComponentizaÃ§Ã£o premium'],
         },
         image: {
           src: '/images/projects/747-garage/cover.webp',
@@ -108,37 +105,37 @@ export const ProjectsSection = () => {
       },
       {
         slug: 'line-rios-croche',
-        title: 'Line Rios Crochê',
-        category: 'E-commerce • Conversão • Mobile',
-        impact: 'Conversão mobile',
+        title: 'Line Rios CrochÃª',
+        category: 'E-commerce â€¢ ConversÃ£o â€¢ Mobile',
+        impact: 'ConversÃ£o mobile',
         description:
-          'E-commerce mobile-first focado em conversão via WhatsApp, com catálogo digital e fluxo de compra simplificado.',
+          'E-commerce mobile-first focado em conversÃ£o via WhatsApp, com catÃ¡logo digital e fluxo de compra simplificado.',
         tech: ['Next.js', 'TypeScript', 'Tailwind', 'WhatsApp', 'UX'],
         details: {
-          problema: 'Simplificar conversão e atendimento sem perder o toque artesanal da marca.',
-          solucao: 'Catálogo digital com CTA direto para WhatsApp e UX voltada ao mobile.',
+          problema: 'Simplificar conversÃ£o e atendimento sem perder o toque artesanal da marca.',
+          solucao: 'CatÃ¡logo digital com CTA direto para WhatsApp e UX voltada ao mobile.',
           stack: ['Next.js', 'TypeScript', 'Tailwind', 'WhatsApp API'],
-          aprendizados: ['Fluxo de conversão', 'UX mobile-first'],
+          aprendizados: ['Fluxo de conversÃ£o', 'UX mobile-first'],
         },
         image: {
           src: '/images/projects/rios-croche/cover.webp',
-          alt: 'Interface do projeto Line Rios Crochê',
+          alt: 'Interface do projeto Line Rios CrochÃª',
         },
         repoUrl: 'https://github.com/arthurbarros-hub/rios.croche',
       },
       {
         slug: 'dagym',
         title: 'Dagym',
-        category: 'Produto digital • Social • Integração',
+        category: 'Produto digital â€¢ Social â€¢ IntegraÃ§Ã£o',
         impact: 'Front-end colaborativo',
         description:
-          'Projeto institucional colaborativo de rede social fitness, com contribuição no front-end e integração com back-end Java.',
+          'Projeto institucional colaborativo de rede social fitness, com contribuiÃ§Ã£o no front-end e integraÃ§Ã£o com back-end Java.',
         tech: ['React', 'TypeScript', 'Java', 'UI', 'Integracao'],
         details: {
           problema: 'Construir camada visual consistente para uma plataforma fitness colaborativa.',
-          solucao: 'Componentização front-end com foco em usabilidade e integração com APIs Java.',
+          solucao: 'ComponentizaÃ§Ã£o front-end com foco em usabilidade e integraÃ§Ã£o com APIs Java.',
           stack: ['React', 'TypeScript', 'Java', 'UI Design'],
-          aprendizados: ['Colaboração entre times', 'Integração front/back'],
+          aprendizados: ['ColaboraÃ§Ã£o entre times', 'IntegraÃ§Ã£o front/back'],
         },
         image: {
           src: '/images/projects/dagym/cover.webp',
@@ -148,39 +145,39 @@ export const ProjectsSection = () => {
       },
       {
         slug: 'cadastro-usuarios-java',
-        title: 'Cadastro de Usuários em Java',
-        category: 'Back-end • POO • Aplicações',
-        impact: 'Base técnica',
+        title: 'Cadastro de UsuÃ¡rios em Java',
+        category: 'Back-end â€¢ POO â€¢ AplicaÃ§Ãµes',
+        impact: 'Base tÃ©cnica',
         description:
-          'Aplicação em Java voltada ao cadastro de usuários, com foco em lógica, organização de dados e evolução prática no back-end.',
-        tech: ['Java', 'POO', 'Lógica', 'Android', 'Back-End'],
+          'AplicaÃ§Ã£o em Java voltada ao cadastro de usuÃ¡rios, com foco em lÃ³gica, organizaÃ§Ã£o de dados e evoluÃ§Ã£o prÃ¡tica no back-end.',
+        tech: ['Java', 'POO', 'LÃ³gica', 'Android', 'Back-End'],
         details: {
-          problema: 'Evoluir domínio de back-end e POO em um cenário real de cadastro.',
-          solucao: 'Aplicação estruturada com cadastro de usuários e organização clara de dados.',
+          problema: 'Evoluir domÃ­nio de back-end e POO em um cenÃ¡rio real de cadastro.',
+          solucao: 'AplicaÃ§Ã£o estruturada com cadastro de usuÃ¡rios e organizaÃ§Ã£o clara de dados.',
           stack: ['Java', 'POO', 'Android', 'Back-End'],
-          aprendizados: ['Modelagem de dados', 'Boas práticas de código'],
+          aprendizados: ['Modelagem de dados', 'Boas prÃ¡ticas de cÃ³digo'],
         },
         image: {
           src: '/images/projects/java/cover.webp',
-          alt: 'Interface do projeto Cadastro de Usuários em Java',
+          alt: 'Interface do projeto Cadastro de UsuÃ¡rios em Java',
         },
         repoUrl: 'https://github.com/arthurbarros-hub/CADASTROusuario',
       },
       {
         slug: 'login-cadastro',
         title: 'Sistema de Login e Cadastro',
-        category: 'Front-End • UI Design • Glassmorphism',
+        category: 'Front-End â€¢ UI Design â€¢ Glassmorphism',
         impact: 'Interface moderna',
         description:
-          'Interface moderna de login e cadastro desenvolvida com HTML, CSS e JavaScript, explorando visual glassmorphism, responsividade e experiência de usuário.',
+          'Interface moderna de login e cadastro desenvolvida com HTML, CSS e JavaScript, explorando visual glassmorphism, responsividade e experiÃªncia de usuÃ¡rio.',
         tech: ['HTML', 'CSS', 'JavaScript', 'UI Design', 'Glassmorphism', 'Responsivo'],
         details: {
           problema:
-            'Projeto focado em construção de interfaces modernas, organização visual, responsividade e microinterações em uma tela de autenticação com estética glassmorphism.',
+            'Projeto focado em construÃ§Ã£o de interfaces modernas, organizaÃ§Ã£o visual, responsividade e microinteraÃ§Ãµes em uma tela de autenticaÃ§Ã£o com estÃ©tica glassmorphism.',
           solucao:
             'Uso de HTML, CSS e JavaScript para criar um layout responsivo com visual glassmorphism, foco em usabilidade e refinamento visual.',
           stack: ['HTML', 'CSS', 'JavaScript', 'UI Design', 'Glassmorphism', 'Responsivo'],
-          aprendizados: ['Interface moderna', 'Microinterações', 'Responsividade'],
+          aprendizados: ['Interface moderna', 'MicrointeraÃ§Ãµes', 'Responsividade'],
         },
         image: {
           src: '/images/projects/login-cadastro/cover.webp',
@@ -190,18 +187,18 @@ export const ProjectsSection = () => {
       },
       {
         slug: 'jogo-da-velha',
-        title: 'Jogo da Velha Invencível',
-        category: 'Algoritmos • Lógica • IA',
-        impact: 'Lógica aplicada',
+        title: 'Jogo da Velha InvencÃ­vel',
+        category: 'Algoritmos â€¢ LÃ³gica â€¢ IA',
+        impact: 'LÃ³gica aplicada',
         description:
-          'Jogo da velha desenvolvido com HTML, CSS e JavaScript, onde a IA usa estratégia determinística para impedir a vitória do usuário.',
+          'Jogo da velha desenvolvido com HTML, CSS e JavaScript, onde a IA usa estratÃ©gia determinÃ­stica para impedir a vitÃ³ria do usuÃ¡rio.',
         tech: ['HTML', 'CSS', 'JavaScript', 'Minimax', 'Alpha-Beta'],
         details: {
-          problema: 'Criar um jogo de lógica com IA capaz de impedir qualquer vitória do jogador.',
+          problema: 'Criar um jogo de lÃ³gica com IA capaz de impedir qualquer vitÃ³ria do jogador.',
           solucao:
-            'Implementação de tomada de decisão determinística com busca Minimax e poda Alpha-Beta.',
+            'ImplementaÃ§Ã£o de tomada de decisÃ£o determinÃ­stica com busca Minimax e poda Alpha-Beta.',
           stack: ['HTML', 'CSS', 'JavaScript', 'Minimax', 'Alpha-Beta'],
-          aprendizados: ['Raciocínio algorítmico', 'Estratégia de jogo', 'IA no navegador'],
+          aprendizados: ['RaciocÃ­nio algorÃ­tmico', 'EstratÃ©gia de jogo', 'IA no navegador'],
         },
         image: {
           src: '/images/projects/jogo-da-velha/cover.webp',
@@ -212,17 +209,17 @@ export const ProjectsSection = () => {
       {
         slug: 'gerador-musica',
         title: 'Gerador de Letras com IA',
-        category: 'IA simulada • Criatividade • Web App',
+        category: 'IA simulada â€¢ Criatividade â€¢ Web App',
         impact: 'Produto interativo',
         description:
-          'Aplicação web para gerar letras de música a partir de tema, gênero, humor, palavras-chave e direção criativa do usuário.',
+          'AplicaÃ§Ã£o web para gerar letras de mÃºsica a partir de tema, gÃªnero, humor, palavras-chave e direÃ§Ã£o criativa do usuÃ¡rio.',
         tech: ['HTML', 'CSS', 'JavaScript', 'Local Storage', 'UI/UX'],
         details: {
-          problema: 'Estruturar uma experiência criativa com geração de conteúdo dentro do navegador.',
+          problema: 'Estruturar uma experiÃªncia criativa com geraÃ§Ã£o de conteÃºdo dentro do navegador.',
           solucao:
-            'Formulários guiados com estados, histórico local e geração estruturada de letras.',
+            'FormulÃ¡rios guiados com estados, histÃ³rico local e geraÃ§Ã£o estruturada de letras.',
           stack: ['HTML', 'CSS', 'JavaScript', 'Local Storage', 'UI/UX'],
-          aprendizados: ['Gestão de estados', 'UX para criação', 'Conteúdo estruturado'],
+          aprendizados: ['GestÃ£o de estados', 'UX para criaÃ§Ã£o', 'ConteÃºdo estruturado'],
         },
         image: {
           src: '/images/projects/gerador-musica/cover.webp',
@@ -251,8 +248,8 @@ export const ProjectsSection = () => {
       <div className="relative z-10 flex flex-col gap-10 lg:gap-12">
         <AnimatedHeading
           eyebrow="PROJETOS"
-          title="Projetos que transformaram conhecimento em execução"
-          subtitle="Da automação física com inteligência artificial ao desenvolvimento de experiências web modernas, cada projeto representa uma etapa prática da minha evolução técnica."
+          title="Projetos que transformaram conhecimento em execuÃ§Ã£o"
+          subtitle="Da automaÃ§Ã£o fÃ­sica com inteligÃªncia artificial ao desenvolvimento de experiÃªncias web modernas, cada projeto representa uma etapa prÃ¡tica da minha evoluÃ§Ã£o tÃ©cnica."
           size="lg"
           accent
         />
@@ -264,18 +261,14 @@ export const ProjectsSection = () => {
           viewport={{ once: true, amount: 0.15 }}
           className="flex flex-col gap-8"
         >
-<<<<<<< HEAD
-          {/* Featured Project - Totem IA */}
-=======
-          {/* Featured Project */}
->>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
+{/* Featured Project - Totem IA */}
+
           <motion.div variants={revealVariants}>
             <div className="group relative">
               <div className="pointer-events-none absolute -inset-8 rounded-3xl bg-[radial-gradient(circle_at_top,rgb(14_165_233/0.45),transparent_70%)] opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-100" />
               <div className="pointer-events-none absolute -inset-px rounded-2xl bg-gradient-to-r from-cyan-400/40 via-blue-500/40 to-indigo-400/40 opacity-0 blur transition-opacity duration-500 group-hover:opacity-100" />
               <GlassCard className="relative overflow-hidden p-6 sm:p-8 lg:p-10">
-<<<<<<< HEAD
-                <div className="flex flex-col gap-8">
+<div className="flex flex-col gap-8">
                   {/* Header Section */}
                   <motion.div
                     className="space-y-4"
@@ -343,7 +336,7 @@ export const ProjectsSection = () => {
                     viewport={{ once: true }}
                   >
                     <p className="text-xs uppercase tracking-[0.3em] text-muted/70">
-                      Stack Técnico
+                      Stack TÃ©cnico
                     </p>
                     <div className="flex flex-wrap gap-2">
                       {(featuredTechOpen
@@ -421,7 +414,7 @@ export const ProjectsSection = () => {
                         </div>
                         <div className="space-y-2">
                           <p className="text-xs uppercase tracking-[0.3em] text-accent/70 font-semibold">
-                            Solução
+                            SoluÃ§Ã£o
                           </p>
                           <p className="text-sm text-muted leading-relaxed">
                             {featuredProject.details.solucao}
@@ -461,174 +454,7 @@ export const ProjectsSection = () => {
                     </motion.div>
                   ) : null}
                 </div>
-=======
-                  <div className="grid gap-8 lg:grid-cols-[0.45fr_0.55fr] lg:items-stretch">
-                    {/* Content */}
-                    <div className="order-2 flex flex-col gap-6 lg:order-1">
-                      <div className="space-y-4">
-                        <div className="flex items-center gap-3 flex-wrap">
-                          <span className="text-xs uppercase tracking-[0.35em] font-semibold text-accent">
-                            Destaque
-                          </span>
-                          <span className="text-xs uppercase tracking-[0.3em] text-muted">
-                            {featuredProject.category}
-                          </span>
-                        </div>
-                        <h3 className="text-3xl sm:text-4xl font-bold text-fg leading-tight">
-                          {featuredProject.title}
-                        </h3>
-                        <p className="text-sm sm:text-base text-muted leading-relaxed">
-                          {featuredProject.pitch}
-                        </p>
-                      </div>
 
-                      <div className="flex flex-wrap gap-2">
-                        {featuredProject.highlights.map((item) => (
-                          <span
-                            key={item}
-                            className="text-[0.65rem] uppercase tracking-[0.26em] text-muted px-3 py-1.5 rounded-full border border-white/10 bg-surface/60"
-                          >
-                            {item}
-                          </span>
-                        ))}
-                      </div>
-
-                      <div className="flex flex-wrap gap-2">
-                        {(featuredTechOpen
-                          ? featuredProject.tech
-                          : featuredProject.tech.slice(0, 4)
-                        ).map((tag) => (
-                          <span
-                            key={tag}
-                            className="text-[0.65rem] uppercase tracking-[0.24em] text-accent/80 px-3 py-1.5 rounded-full border border-accent/30 bg-accent/10"
-                          >
-                            {tag}
-                          </span>
-                        ))}
-                        {!featuredTechOpen && featuredProject.tech.length > 4 ? (
-                          <span className="text-[0.65rem] uppercase tracking-[0.24em] text-muted/70 px-2 py-1.5">
-                            +{featuredProject.tech.length - 4}
-                          </span>
-                        ) : null}
-                      </div>
-
-                      <div className="flex flex-wrap gap-3">
-                        <Button
-                          size="sm"
-                          variant="primary"
-                          onClick={() => setFeaturedDetailsOpen((prev) => !prev)}
-                        >
-                          Ver detalhes
-                        </Button>
-                        <Button
-                          size="sm"
-                          variant="outline"
-                          onClick={() => setFeaturedTechOpen((prev) => !prev)}
-                        >
-                          Tecnologias
-                        </Button>
-                      </div>
-
-                      {featuredDetailsOpen ? (
-                        <div className="space-y-4 rounded-2xl border border-white/10 bg-surface/60 p-4">
-                          <div className="space-y-2">
-                            <p className="text-xs uppercase tracking-[0.3em] text-accent/70">
-                              Problema
-                            </p>
-                            <p className="text-sm text-muted leading-relaxed">
-                              {featuredProject.details.problema}
-                            </p>
-                          </div>
-                          <div className="space-y-2">
-                            <p className="text-xs uppercase tracking-[0.3em] text-accent/70">
-                              Solução
-                            </p>
-                            <p className="text-sm text-muted leading-relaxed">
-                              {featuredProject.details.solucao}
-                            </p>
-                          </div>
-                          <div className="flex flex-wrap gap-2">
-                            {featuredProject.details.stack.map((tag) => (
-                              <span
-                                key={tag}
-                                className="text-[0.65rem] uppercase tracking-[0.24em] text-muted px-2 py-1.5 rounded-full border border-white/10 bg-surface/70"
-                              >
-                                {tag}
-                              </span>
-                            ))}
-                          </div>
-                          <div className="space-y-2">
-                            <p className="text-xs uppercase tracking-[0.3em] text-muted">
-                              Aprendizados
-                            </p>
-                            <div className="flex flex-wrap gap-2">
-                              {featuredProject.details.aprendizados.map((item) => (
-                                <span
-                                  key={item}
-                                  className="text-[0.65rem] uppercase tracking-[0.24em] text-muted/80 px-2 py-1.5 rounded-full border border-white/10"
-                                >
-                                  {item}
-                                </span>
-                              ))}
-                            </div>
-                          </div>
-                        </div>
-                      ) : null}
-                    </div>
-
-                    {/* Visual */}
-                    <div className="order-1 lg:order-2">
-                      <button
-                        onClick={() => handleOpenProject(featuredProject.repoUrl)}
-                        onKeyDown={(e) => {
-                          if (e.key === 'Enter') handleOpenProject(featuredProject.repoUrl);
-                        }}
-                        aria-label="Abrir projeto Totem IA"
-                        className="relative w-full overflow-hidden rounded-2xl p-px hover:cursor-pointer focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-surface rounded-xl"
-                      >
-                        <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-cyan-400/40 via-blue-500/30 to-transparent opacity-70" />
-                        <div className="relative h-72 sm:h-80 lg:h-full min-h-[20rem] rounded-[calc(1rem_-_1px)] overflow-hidden transition-all duration-500 group-hover:brightness-110">
-                          <div className="pointer-events-none absolute inset-0 z-10 bg-[radial-gradient(circle_at_top,rgb(14_165_233/0.18),transparent_60%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-                          <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
-                          <div className="pointer-events-none absolute inset-0 z-10 bg-white/5 backdrop-blur-[1px]" />
-                          <div className="pointer-events-none absolute left-6 top-6 z-20 h-px w-24 bg-gradient-to-r from-cyan-400/70 to-transparent animate-pulse" />
-                          <div className="pointer-events-none absolute right-6 bottom-8 z-20 h-px w-28 bg-gradient-to-l from-blue-400/70 to-transparent animate-pulse" />
-                          <div className="pointer-events-none absolute left-5 top-5 z-20 h-4 w-4 border-l border-t border-cyan-300/70" />
-                          <div className="pointer-events-none absolute right-5 top-5 z-20 h-4 w-4 border-r border-t border-cyan-300/70" />
-                          <div className="pointer-events-none absolute left-5 bottom-5 z-20 h-4 w-4 border-l border-b border-cyan-300/70" />
-                          <div className="pointer-events-none absolute right-5 bottom-5 z-20 h-4 w-4 border-r border-b border-cyan-300/70" />
-                          {!featuredImageError ? (
-                            <Image
-                              src={featuredProject.image.src}
-                              alt={featuredProject.image.alt}
-                              fill
-                              sizes="(min-width: 1024px) 55vw, 100vw"
-                              className="object-cover transition-transform duration-700 ease-soft group-hover:scale-105"
-                              onError={() => setFeaturedImageError(true)}
-                              priority
-                            />
-                          ) : (
-                            <div className="relative z-20 flex h-full items-center justify-center bg-gradient-to-br from-accent/20 to-transparent">
-                              <div className="text-center space-y-2">
-                                <div className="text-5xl">🤖</div>
-                                <p className="text-xs uppercase tracking-[0.3em] text-muted">
-                                  Projeto Interativo
-                                </p>
-                              </div>
-                            </div>
-                          )}
-                          <div className="pointer-events-none absolute inset-0 z-30 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                            <div className="text-center space-y-2">
-                              <p className="text-sm uppercase tracking-[0.3em] font-semibold text-white drop-shadow-lg">
-                                Abrir Projeto
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </button>
-                    </div>
-                  </div>
->>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
               </GlassCard>
             </div>
           </motion.div>
@@ -678,9 +504,9 @@ export const ProjectsSection = () => {
                         ) : (
                           <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-accent/15 via-surface/40 to-transparent">
                             <div className="text-center space-y-2">
-                              <div className="text-4xl">◼</div>
+                              <div className="text-4xl">â—¼</div>
                               <p className="text-[0.65rem] uppercase tracking-[0.3em] text-muted">
-                                Preview indisponível
+                                Preview indisponÃ­vel
                               </p>
                             </div>
                           </div>
@@ -738,11 +564,8 @@ export const ProjectsSection = () => {
                           onClick={() => handleOpenProject(project.liveUrl, project.repoUrl)}
                           className={buttonStyles({ variant: 'outline', size: 'sm' })}
                         >
-<<<<<<< HEAD
-                          {project.liveUrl ? 'Visitar Site' : 'Ver Código'}
-=======
-                          {project.liveUrl ? 'Visitar Live' : 'Ver Código'}
->>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
+{project.liveUrl ? 'Visitar Site' : 'Ver CÃ³digo'}
+
                         </button>
                       ) : null}
                     </div>
@@ -759,7 +582,7 @@ export const ProjectsSection = () => {
                         </div>
                         <div className="space-y-1">
                           <p className="text-xs uppercase tracking-[0.3em] text-accent/70">
-                              Solução
+                              SoluÃ§Ã£o
                           </p>
                           <p className="text-sm text-muted leading-relaxed">
                             {project.details.solucao}
@@ -797,3 +620,4 @@ export const ProjectsSection = () => {
     </SectionContainer>
   );
 };
+

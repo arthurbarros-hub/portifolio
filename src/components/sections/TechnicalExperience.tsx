@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
@@ -45,23 +45,23 @@ export const TechnicalExperienceSection = () => {
 
   const experienceData = useMemo(
     () => ({
-      headline: 'Visita Técnica — Globo Studios',
-      subheadline: 'Imersão em infraestrutura enterprise e ambiente broadcast',
+      headline: 'Visita TÃ©cnica â€” Globo Studios',
+      subheadline: 'ImersÃ£o em infraestrutura enterprise e ambiente broadcast',
       mainDescription:
-        'Experiência de imersão técnica em ambiente de produção audiovisual de grande escala, com observação da infraestrutura tecnológica, conectividade entre sistemas, operação de estúdios e arquitetura utilizada em ecossistemas de alta disponibilidade.',
+        'ExperiÃªncia de imersÃ£o tÃ©cnica em ambiente de produÃ§Ã£o audiovisual de grande escala, com observaÃ§Ã£o da infraestrutura tecnolÃ³gica, conectividade entre sistemas, operaÃ§Ã£o de estÃºdios e arquitetura utilizada em ecossistemas de alta disponibilidade.',
       complementaryText:
-        'Vivência prática para ampliar visão sobre redes robustas, infraestrutura crítica, fluxos operacionais e integração entre múltiplas tecnologias em ambiente corporativo de missão crítica.',
+        'VivÃªncia prÃ¡tica para ampliar visÃ£o sobre redes robustas, infraestrutura crÃ­tica, fluxos operacionais e integraÃ§Ã£o entre mÃºltiplas tecnologias em ambiente corporativo de missÃ£o crÃ­tica.',
       badges: [
         'INFRAESTRUTURA',
         'REDES',
         'BROADCAST',
         'ALTA DISPONIBILIDADE',
         'ECOSSISTEMAS CORPORATIVOS',
-        'VISITA TÉCNICA',
+        'VISITA TÃ‰CNICA',
       ],
       image: {
         src: '/images/experiences/globo/globo-tech.webp',
-        alt: 'Infraestrutura técnica e ambiente de produção dos Globo Studios',
+        alt: 'Infraestrutura tÃ©cnica e ambiente de produÃ§Ã£o dos Globo Studios',
       },
     }),
     [],
@@ -87,7 +87,7 @@ export const TechnicalExperienceSection = () => {
           {...animationSettings}
         >
           <AnimatedHeading
-            eyebrow="FORMAÇÃO TÉCNICA"
+            eyebrow="FORMAÃ‡ÃƒO TÃ‰CNICA"
             title={experienceData.headline}
             subtitle={experienceData.subheadline}
             size="lg"
@@ -167,9 +167,9 @@ export const TechnicalExperienceSection = () => {
                 />
               ) : (
                 <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-blue-500/10 to-purple-500/10 backdrop-blur-sm">
-                  <div className="text-5xl mb-3">🏢</div>
+                  <div className="text-5xl mb-3">ðŸ¢</div>
                   <p className="text-sm text-slate-400 text-center px-4">
-                    Globo Studios — Infraestrutura Técnica
+                    Globo Studios â€” Infraestrutura TÃ©cnica
                   </p>
                 </div>
               )}
@@ -193,10 +193,11 @@ export const TechnicalExperienceSection = () => {
             Contexto
           </p>
           <p className="text-base md:text-lg text-slate-200 leading-relaxed font-light max-w-2xl">
-            Participação em imersão técnica que ampliou compreensão sobre infraestrutura corporativa em larga escala, visão sobre conectividade robusta, operação de ambientes críticos e integração de múltiplos sistemas em ecossistema profissional broadcast.
+            ParticipaÃ§Ã£o em imersÃ£o tÃ©cnica que ampliou compreensÃ£o sobre infraestrutura corporativa em larga escala, visÃ£o sobre conectividade robusta, operaÃ§Ã£o de ambientes crÃ­ticos e integraÃ§Ã£o de mÃºltiplos sistemas em ecossistema profissional broadcast.
           </p>
         </motion.div>
       </SectionContainer>
     </section>
   );
 };
+

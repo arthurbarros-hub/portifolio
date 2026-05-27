@@ -1,4 +1,4 @@
-import type { ButtonHTMLAttributes } from 'react';
+﻿import type { ButtonHTMLAttributes } from 'react';
 
 import { focusRing } from '@/utils/a11y';
 import { cn } from '@/utils/cn';
@@ -60,3 +60,4 @@ export const Button = ({
     {...props}
   />
 );
+

@@ -1,4 +1,4 @@
-import type { MetadataRoute } from 'next';
+﻿import type { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://arthurportfolio.dev';
@@ -37,7 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/#projects`,
       lastModified: new Date(),
-      changeFrequency: 'bi-weekly',
+      changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
@@ -54,3 +54,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 }
+

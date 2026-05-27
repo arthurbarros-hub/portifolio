@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useEffect, useState } from 'react';
 
@@ -27,3 +27,4 @@ export const usePrefersReducedMotion = (defaultValue = false) => {
 
   return prefersReducedMotion;
 };
+

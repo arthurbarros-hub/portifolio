@@ -1,4 +1,4 @@
-import Lenis, { type LenisOptions } from 'lenis';
+﻿import Lenis, { type LenisOptions } from 'lenis';
 
 export const createLenis = (options: LenisOptions = {}) =>
   new Lenis({
@@ -6,3 +6,4 @@ export const createLenis = (options: LenisOptions = {}) =>
     smoothWheel: true,
     ...options,
   });
+

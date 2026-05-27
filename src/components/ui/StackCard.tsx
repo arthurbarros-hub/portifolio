@@ -1,4 +1,4 @@
-import type { HTMLAttributes } from 'react';
+﻿import type { HTMLAttributes } from 'react';
 
 import type { StackItem } from '@/types';
 import { cn } from '@/utils/cn';
@@ -23,3 +23,4 @@ export const StackCard = ({ item, className, ...props }: StackCardProps) => (
     </div>
   </GlassCard>
 );
+

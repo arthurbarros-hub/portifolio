@@ -1,4 +1,4 @@
-import type { HTMLAttributes } from 'react';
+﻿import type { HTMLAttributes } from 'react';
 
 import { cn } from '@/utils/cn';
 
@@ -28,3 +28,4 @@ export const GlowWrapper = ({
     <div className="relative">{children}</div>
   </div>
 );
+

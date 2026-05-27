@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { motion } from 'framer-motion';
 
@@ -88,9 +88,10 @@ export default function Loading() {
           variants={itemVariants}
           className="text-sm text-muted/60 uppercase tracking-wider"
         >
-          Carregando portfólio...
+          Carregando portfÃ³lio...
         </motion.p>
       </motion.div>
     </div>
   );
 }
+

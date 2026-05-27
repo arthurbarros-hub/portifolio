@@ -1,4 +1,4 @@
-import type { HTMLAttributes } from 'react';
+﻿import type { HTMLAttributes } from 'react';
 
 import { cn } from '@/utils/cn';
 import { surface } from '@/utils/ui';
@@ -20,3 +20,4 @@ export const GlassCard = ({
 }: GlassCardProps) => (
   <div className={cn(surface.card, surface.cardHover, glowClass[glow], className)} {...props} />
 );
+

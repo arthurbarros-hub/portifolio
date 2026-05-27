@@ -1,4 +1,4 @@
-export interface Technology {
+﻿export interface Technology {
   name: string;
   category: 'frontend' | 'backend' | 'database' | 'tools' | 'ai';
   svgComponent: () => React.ReactNode;
@@ -44,16 +44,6 @@ export const TailwindIcon = () => (
   </svg>
 );
 
-<<<<<<< HEAD
-=======
-export const FramerMotionIcon = () => (
-  <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-    <path d="M3 3h18v6H3V3zm0 8h18v6H3v-6zm0 8h18v2H3v-2z" opacity="0.8" />
-    <path d="M9 9h6v6H9V9z" fill="#0055FF" />
-  </svg>
-);
-
->>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
 export const HTML5Icon = () => (
   <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
     <path d="M2 3h20v18H2V3zm3 2v14h2V5H5zm4 0v14h2V5H9zm4 0v14h2V5h-2z" fill="#E34C26" />
@@ -103,24 +93,9 @@ export const MySQLIcon = () => (
   </svg>
 );
 
-<<<<<<< HEAD
-=======
-export const PostgreSQLIcon = () => (
-  <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-    <circle cx="12" cy="12" r="10" fill="#336791" />
-    <path d="M12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6z" fill="white" opacity="0.3" />
-  </svg>
-);
 
-export const FirebaseIcon = () => (
-  <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-    <path d="M4 12L12 2v9h8L4 22v-10z" fill="#FFCA28" />
-    <path d="M12 2L4 12v10l8-9V2z" fill="#FFA726" />
-  </svg>
-);
->>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
-
-export const GitIcon = () => (
+export const DatabaseIcon = () => (
+  // Database
   <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
     <circle cx="12" cy="12" r="9" fill="#F1502F" />
     <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z" fill="white" />
@@ -139,16 +114,6 @@ export const VercelIcon = () => (
   </svg>
 );
 
-<<<<<<< HEAD
-=======
-export const VSCodeIcon = () => (
-  <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-    <path d="M2 4l14 8-14 8V4zm2 2v12l10-6-10-6z" fill="#0098FF" />
-    <path d="M18 4c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z" fill="#007ACC" />
-  </svg>
-);
-
->>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
 export const PostmanIcon = () => (
   <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" fill="#FF6C37" />
@@ -184,6 +149,12 @@ export const APIsIcon = () => (
 export const AutomationIcon = () => (
   <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="#4CAF50" />
+  </svg>
+);
+
+export const GitIcon = () => (
+  <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
+    <path d="M12.26 2c-5.23 0-9.5 4.27-9.5 9.5 0 4.23 2.77 7.83 6.52 9.09.48.08.65-.21.65-.45 0-.22-.01-.88-.01-1.73-2.67.58-3.23-1.29-3.23-1.29-.44-1.12-1.07-1.42-1.07-1.42-.87-.6.07-.59.07-.59.97.07 1.48.99 1.48.99.86 1.48 2.26 1.05 2.81.8.09-.63.34-1.05.61-1.29-2.14-.24-4.39-1.07-4.39-4.77 0-1.06.38-1.92 1-2.6-.1-.25-.43-1.24.1-2.59 0 0 .82-.26 2.7 1 .78-.22 1.62-.33 2.45-.33.83 0 1.67.11 2.45.33 1.87-1.26 2.69-1 2.69-1 .53 1.34.2 2.34.1 2.59.62.68 1 1.54 1 2.6 0 3.71-2.25 4.53-4.4 4.77.35.3.65.92.65 1.86 0 1.34-.01 2.42-.01 2.75 0 .25.17.54.66.44C19.23 19.38 22 15.78 22 11.5 22 6.27 17.73 2 12.26 2Z" fill="#F1502F" />
   </svg>
 );
 
@@ -225,16 +196,6 @@ export const technologies: Technology[] = [
     animationType: 'fluid',
   },
   {
-<<<<<<< HEAD
-=======
-    name: 'Framer Motion',
-    category: 'frontend',
-    svgComponent: FramerMotionIcon,
-    brandColor: '#0055FF',
-    animationType: 'float',
-  },
-  {
->>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
     name: 'HTML5',
     category: 'frontend',
     svgComponent: HTML5Icon,
@@ -294,23 +255,6 @@ export const technologies: Technology[] = [
     brandColor: '#00758F',
     animationType: 'orbit',
   },
-<<<<<<< HEAD
-=======
-  {
-    name: 'PostgreSQL',
-    category: 'database',
-    svgComponent: PostgreSQLIcon,
-    brandColor: '#336791',
-    animationType: 'pulse',
-  },
-  {
-    name: 'Firebase',
-    category: 'database',
-    svgComponent: FirebaseIcon,
-    brandColor: '#FFCA28',
-    animationType: 'glow',
-  },
->>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
   
   // Tools
   {
@@ -335,16 +279,6 @@ export const technologies: Technology[] = [
     animationType: 'orbit',
   },
   {
-<<<<<<< HEAD
-=======
-    name: 'VS Code',
-    category: 'tools',
-    svgComponent: VSCodeIcon,
-    brandColor: '#007ACC',
-    animationType: 'pulse',
-  },
-  {
->>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
     name: 'Postman',
     category: 'tools',
     svgComponent: PostmanIcon,
@@ -382,3 +316,5 @@ export const technologies: Technology[] = [
     animationType: 'orbit',
   },
 ];
+
+

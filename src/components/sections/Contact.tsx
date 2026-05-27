@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useMemo } from 'react';
 import { motion } from 'framer-motion';
@@ -82,8 +82,8 @@ export const ContactSection = () => {
       {
         id: 'location',
         icon: <FiMapPin className="w-6 h-6" />,
-        label: 'São Paulo, SP',
-        value: 'Disponível para oportunidades híbridas, remotas ou presenciais.',
+        label: 'SÃ£o Paulo, SP',
+        value: 'DisponÃ­vel para oportunidades hÃ­bridas, remotas ou presenciais.',
       },
     ],
     [],
@@ -135,7 +135,7 @@ export const ContactSection = () => {
             className="max-w-3xl"
           >
             <p className="text-base sm:text-lg text-muted leading-relaxed">
-              Se você busca alguém com base prática em infraestrutura, experiência com desenvolvimento web e evolução contínua no ecossistema Java, vamos conversar.
+              Se vocÃª busca alguÃ©m com base prÃ¡tica em infraestrutura, experiÃªncia com desenvolvimento web e evoluÃ§Ã£o contÃ­nua no ecossistema Java, vamos conversar.
             </p>
           </motion.div>
 
@@ -218,10 +218,10 @@ export const ContactSection = () => {
               {/* CTA Headline */}
               <div className="flex flex-col gap-3">
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
-                  Disponível para oportunidades em tecnologia
+                  DisponÃ­vel para oportunidades em tecnologia
                 </h2>
                 <p className="text-base sm:text-lg text-muted leading-relaxed max-w-2xl">
-                  Busco oportunidades para aplicar minha base técnica, evoluir como desenvolvedor back-end e contribuir com produtos digitais reais.
+                  Busco oportunidades para aplicar minha base tÃ©cnica, evoluir como desenvolvedor back-end e contribuir com produtos digitais reais.
                 </p>
               </div>
 
@@ -259,3 +259,4 @@ export const ContactSection = () => {
     </>
   );
 };
+

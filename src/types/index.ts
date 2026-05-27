@@ -1,4 +1,4 @@
-export type LinkItem = {
+﻿export type LinkItem = {
   label: string;
   href: string;
 };
@@ -70,3 +70,4 @@ export type BlogPost = {
   summary?: string;
   tags?: string[];
 };
+

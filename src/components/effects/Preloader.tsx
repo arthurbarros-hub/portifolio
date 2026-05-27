@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
@@ -60,3 +60,4 @@ export const Preloader = () => {
     </AnimatePresence>
   );
 };
+

@@ -1,4 +1,4 @@
-export const colors = {
+﻿export const colors = {
   bg: 'rgb(var(--color-bg) / <alpha-value>)',
   surface: 'rgb(var(--color-surface) / <alpha-value>)',
   fg: 'rgb(var(--color-fg) / <alpha-value>)',
@@ -67,3 +67,4 @@ export const shadow = {
   card: 'var(--shadow-card)',
   soft: 'var(--shadow-soft)',
 };
+

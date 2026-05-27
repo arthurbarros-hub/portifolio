@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { motion } from 'framer-motion';
 import {
@@ -122,14 +122,12 @@ export const TechLogoStrip = ({ className = '' }: TechLogoStripProps) => {
                   : {}
               }
               aria-label={tech.name}
-<<<<<<< HEAD
-              style={
+style={
                 tech.color === '#FFFFFF'
                   ? { filter: 'invert(1) brightness(0.95)' }
                   : undefined
               }
-=======
->>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
+
             >
               <Icon size={28} style={{ color: tech.color }} />
             </motion.div>
@@ -139,3 +137,4 @@ export const TechLogoStrip = ({ className = '' }: TechLogoStripProps) => {
     </motion.div>
   );
 };
+

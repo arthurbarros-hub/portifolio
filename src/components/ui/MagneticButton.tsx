@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import type { HTMLMotionProps } from 'framer-motion';
 import type { MouseEvent } from 'react';
@@ -71,3 +71,4 @@ export function MagneticButton({
     />
   );
 }
+

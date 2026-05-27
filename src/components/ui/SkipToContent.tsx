@@ -1,4 +1,4 @@
-import { cn } from '@/utils/cn';
+﻿import { cn } from '@/utils/cn';
 
 type SkipToContentProps = {
   className?: string;
@@ -15,3 +15,4 @@ export const SkipToContent = ({ className }: SkipToContentProps) => (
     Skip to content
   </a>
 );
+

@@ -1,4 +1,4 @@
-import { gsap } from 'gsap';
+﻿import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 let registered = false;
@@ -10,3 +10,4 @@ export const registerGSAP = () => {
 };
 
 export { gsap, ScrollTrigger };
+

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import type { HTMLMotionProps } from 'framer-motion';
 import { motion } from 'framer-motion';
@@ -100,3 +100,4 @@ export const AnimatedHeading = ({
     </motion.div>
   );
 };
+

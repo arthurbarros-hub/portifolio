@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { motion } from 'framer-motion';
 
@@ -12,27 +12,27 @@ import { motion as motionTokens } from '@/styles/tokens';
 
 const journeyItems: TimelineItem[] = [
   {
-    title: 'Base sólida em suporte técnico',
+    title: 'Base em suporte técnico e infraestrutura',
     description:
-      'Atuação prática com manutenção, configuração de computadores, redes locais, sistemas operacionais, troubleshooting e atendimento técnico institucional.',
+      'Atuação prática com manutenção e configuração de computadores, redes locais, sistemas operacionais, troubleshooting e atendimento a usuários em ambiente institucional.',
     meta: 'SUPORTE & INFRAESTRUTURA',
   },
   {
-    title: 'Automação e sistemas conectados',
+    title: 'Automação e integração hardware/software',
     description:
-      'Experiência no desenvolvimento de soluções com Python, integração de APIs, sensores físicos, Arduino e Raspberry Pi, conectando software e hardware.',
+      'Projetos com Python, sensores físicos, Arduino e Raspberry Pi, conectando software e hardware em protótipos interativos.',
     meta: 'AUTOMAÇÃO & INTEGRAÇÃO',
   },
   {
-    title: 'Construção de aplicações modernas',
+    title: 'Desenvolvimento web moderno',
     description:
-      'Desenvolvimento de interfaces e aplicações com Next.js, React, TypeScript e Tailwind CSS, com foco em performance, componentização e experiência do usuário.',
+      'Construção de interfaces e aplicações com Next.js, React, TypeScript e Tailwind CSS, com foco em usabilidade e performance.',
     meta: 'DESENVOLVIMENTO WEB',
   },
   {
-    title: 'Especialização em desenvolvimento back-end',
+    title: 'Evolução para back-end Java',
     description:
-      'Transição estratégica para o ecossistema Java, com foco em orientação a objetos, APIs REST, modelagem relacional, lógica de programação e arquitetura back-end.',
+      'Estudos contínuos em Java e fundamentos de back-end, com foco em orientação a objetos, modelagem relacional e boas práticas.',
     meta: 'BACK-END JAVA',
   },
 ];
@@ -59,7 +59,7 @@ export const JourneySection = () => {
         <AnimatedHeading
           eyebrow="JORNADA TÉCNICA"
           title="Minha jornada em tecnologia"
-          subtitle="Da infraestrutura e suporte técnico à evolução para desenvolvimento Back-End no ecossistema Java."
+          subtitle="Da infraestrutura e suporte técnico à evolução em desenvolvimento web, automação com Python e estudos em back-end Java."
           size="lg"
           accent
         />
@@ -79,14 +79,14 @@ export const JourneySection = () => {
                 <div className="space-y-3">
                   <h3 className="text-xl font-semibold text-fg">Como minha base técnica evoluiu</h3>
                   <p className="text-sm leading-relaxed text-muted sm:text-base">
-                    Minha experiência começou no contato direto com computadores, redes e usuários.
-                    Essa vivência prática me deu uma visão completa sobre problemas reais de
-                    tecnologia, criando a base para evoluir para desenvolvimento, automação e
-                    back-end.
+                    Minha base começou no contato direto com suporte técnico, infraestrutura, manutenção
+                    de computadores, redes e atendimento a usuários. Essa vivência prática abriu caminho
+                    para minha evolução em desenvolvimento web, automações com Python e estudos no
+                    ecossistema Java e back-end.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2 pt-2">
-                  {['Base técnica', 'Conectividade', 'Produto', 'Especialização'].map((label) => (
+                  {['Base técnica', 'Conectividade', 'Automação', 'Evolução'].map((label) => (
                     <span
                       key={label}
                       className="rounded-full border border-white/10 bg-surface/60 px-3 py-1 text-[0.6rem] uppercase tracking-[0.24em] text-muted"
@@ -111,3 +111,4 @@ export const JourneySection = () => {
     </SectionContainer>
   );
 };
+

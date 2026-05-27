@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { motion } from 'framer-motion';
 import type { Technology } from '@/data/tech-stack';
@@ -106,3 +106,4 @@ export const TechIcon = ({ tech, isHovered = false, prefersReducedMotion = false
     </motion.div>
   );
 };
+

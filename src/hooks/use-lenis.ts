@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useEffect, useRef } from 'react';
 
@@ -25,3 +25,4 @@ export const useLenis = (enabled = true) => {
     };
   }, [enabled]);
 };
+

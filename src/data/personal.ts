@@ -1,4 +1,4 @@
-import type { PersonalInfo } from '@/types';
+﻿import type { PersonalInfo } from '@/types';
 
 export const personal: PersonalInfo = {
   name: 'Your Name',
@@ -7,3 +7,4 @@ export const personal: PersonalInfo = {
   location: 'Remote',
   email: 'you@example.com'
 };
+

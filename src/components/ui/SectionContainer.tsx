@@ -1,4 +1,4 @@
-import type { HTMLAttributes } from 'react';
+﻿import type { HTMLAttributes } from 'react';
 
 import { cn } from '@/utils/cn';
 import { layout } from '@/utils/ui';
@@ -23,3 +23,4 @@ export const SectionContainer = ({
     </Component>
   );
 };
+

@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
@@ -57,11 +57,7 @@ export const Hero = () => {
   return (
     <SectionContainer
       as="section"
-<<<<<<< HEAD
       className="relative min-h-screen overflow-visible pt-32 sm:pt-40 lg:pt-48 pb-14 sm:pb-16 lg:pb-20"
-=======
-      className="relative min-h-screen overflow-hidden pt-32 sm:pt-40 lg:pt-48 pb-14 sm:pb-16 lg:pb-20"
->>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
     >
       <div
         aria-hidden="true"
@@ -72,7 +68,7 @@ export const Hero = () => {
           <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-3">
             <PremiumBadge>ARTHUR MANSUR</PremiumBadge>
             <span className="text-xs uppercase tracking-[0.3em] text-muted">
-              BACK-END JAVA • WEB • APIs • INFRAESTRUTURA
+              Back-End Java • Web • Infraestrutura
             </span>
           </motion.div>
           <motion.h1
@@ -91,8 +87,7 @@ export const Hero = () => {
             className="max-w-[580px] text-base leading-relaxed text-muted sm:text-lg"
             variants={itemVariants}
           >
-            Experiência prática com infraestrutura, suporte técnico, automação com Python, integração
-            de APIs e desenvolvimento web moderno com Next.js e TypeScript.
+            Experiência prática com suporte técnico, infraestrutura, automação com Python e desenvolvimento web moderno com Next.js e TypeScript. Construo aplicações e soluções digitais com base técnica real, foco em aprendizado contínuo e experiência prática em ambientes institucionais e projetos próprios.
           </motion.p>
           <motion.div className="flex flex-wrap gap-3 pt-1" variants={itemVariants}>
             <MagneticButton size="md">Ver projetos</MagneticButton>
@@ -101,7 +96,6 @@ export const Hero = () => {
             </Button>
           </motion.div>
 
-<<<<<<< HEAD
           {/* Curriculum Buttons */}
           <motion.div className="flex flex-wrap gap-3" variants={itemVariants}>
             <a
@@ -123,8 +117,6 @@ export const Hero = () => {
             </a>
           </motion.div>
 
-=======
->>>>>>> 444835e4a34f5afb31fcba663da9a24c5979c93e
           {/* Tech Logo Strip */}
           <motion.div className="pt-8" variants={itemVariants}>
             <p className="text-xs uppercase tracking-[0.3em] text-muted mb-4">
@@ -174,3 +166,4 @@ export const Hero = () => {
     </SectionContainer>
   );
 };
+

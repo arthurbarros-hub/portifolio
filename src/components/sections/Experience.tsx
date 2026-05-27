@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { motion } from 'framer-motion';
 
@@ -16,12 +16,12 @@ const experiences = [
     company: 'Secretaria da Educação do Estado de São Paulo',
     period: 'Abr 2026 — Presente',
     summary:
-      'Atuação voltada à sustentação técnica de ambientes institucionais, garantindo funcionamento de equipamentos, conectividade e suporte a sistemas internos.',
-    impact: 'Sustentação institucional',
+      'Atuação em suporte técnico corporativo, garantindo funcionamento de equipamentos, conectividade e apoio a sistemas internos em ambiente institucional.',
+    impact: 'Ambiente institucional real',
     bullets: [
-      'Suporte técnico e manutenção do parque computacional, incluindo formatação, configuração e atualização de computadores e tablets institucionais.',
-      'Administração de redes locais Wi-Fi e cabeadas, configuração de roteadores e monitoramento de conectividade.',
-      'Atendimento e suporte em sistemas internos e Google Workspace, com foco em resolução ágil de chamados técnicos.',
+      'Suporte técnico e manutenção do parque computacional, com formatação, configuração e atualização de computadores e tablets institucionais.',
+      'Configuração e acompanhamento de redes locais Wi-Fi e cabeadas, roteadores e conectividade.',
+      'Atendimento a usuários e resolução de chamados técnicos em sistemas internos e Google Workspace.',
     ],
     tags: ['Suporte Técnico', 'Infraestrutura', 'Redes', 'Google Workspace', 'Windows', 'Linux'],
   },
@@ -30,12 +30,12 @@ const experiences = [
     company: 'FabLab Fabricação Digital',
     period: 'Jul 2025 — Dez 2025',
     summary:
-      'Experiência com prototipagem, automação e integração entre software, hardware e inteligência artificial aplicada em projeto real.',
+      'Atuação com prototipagem, automação e integração hardware/software em projeto real de laboratório.',
     impact: 'Prototipagem e automação',
     bullets: [
-      'Desenvolvimento de assistente interativo com Python e OpenAI API, integrando sensores físicos a uma interface digital.',
-      'Prototipagem de sistemas físicos integrados a software com Arduino e Raspberry Pi.',
-      'Versionamento contínuo de código com Git, mantendo histórico e organização do desenvolvimento.',
+      'Desenvolvimento do Totem IA com Python e OpenAI API, integrando sensores físicos à interface digital.',
+      'Prototipagem com Arduino e Raspberry Pi para integração entre hardware e software.',
+      'Versionamento e organização do código com Git durante o ciclo do projeto.',
     ],
     tags: ['Python', 'OpenAI API', 'Arduino', 'Raspberry Pi', 'Git', 'Automação'],
   },
@@ -63,7 +63,7 @@ export const ExperienceSection = () => {
         <AnimatedHeading
           eyebrow="EXPERIÊNCIA PROFISSIONAL"
           title="Experiência aplicada em ambientes reais"
-          subtitle="Experiências profissionais que consolidaram minha base técnica e aceleraram minha evolução para desenvolvimento de software."
+          subtitle="Experiências profissionais que consolidaram minha base técnica e fortaleceram minha evolução para desenvolvimento de software."
           size="lg"
           accent
         />
@@ -75,7 +75,7 @@ export const ExperienceSection = () => {
             <span className="h-px flex-1 bg-border/50" />
           </div>
           <p className="max-w-2xl text-sm text-muted">
-            Cada etapa consolidou minha base técnica e acelerou minha evolução para desenvolvimento de software, atuando em ambientes reais corporativos e de inovação digital.
+            Cada etapa consolidou minha base técnica e reforçou minha atuação em ambientes reais corporativos e de inovação digital.
           </p>
         </div>
         <div className="grid gap-6 lg:grid-cols-2">
@@ -131,3 +131,4 @@ export const ExperienceSection = () => {
     </SectionContainer>
   );
 };
+

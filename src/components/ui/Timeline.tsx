@@ -1,4 +1,4 @@
-import type { HTMLAttributes } from 'react';
+﻿import type { HTMLAttributes } from 'react';
 
 import { cn } from '@/utils/cn';
 
@@ -41,3 +41,4 @@ export const Timeline = ({ items, className, ...props }: TimelineProps) => (
     ))}
   </div>
 );
+
