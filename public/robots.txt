@@ -1,0 +1,26 @@
+# Allow all crawlers to access public content
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /_next/
+Allow: /_next/static/
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Specific rules for Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://arthurportfolio.dev/sitemap.xml
+
+# Common crawlers
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
